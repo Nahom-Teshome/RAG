@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(233, 234, 235);
+    margin:0 ;
+    /* border: 2px solid brown; */
+    height: 100vh;
+    position: relative
+}
+.display-form{
+width: 100%;
+/* border: 1px solid blue; */
+position: absolute;
+bottom:3rem;
+display:flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+.display-textarea{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 2rem;
+    border-radius: 1rem;
+    resize: none;
+    scrollbar-width: none;
+    padding: 1rem 1rem 1rem 3rem;
+    /* text-indent: 3rem; */
+    font-family: 'Poppins';
+    border: none;
+    box-shadow: 2px 2px 10px rgb(168, 167, 167);
+    font-weight:600;
+    font-size:.9rem;
+}
+.display-textarea:focus{
+    outline: none;
+}
+
+.display-btn{
+    background-color: rgb(95, 180, 168);
+    box-shadow: 1px 1px 10px rgb(137, 136, 136);
+    border: none;
+    padding: .8rem 3rem;
+    border-radius: 1rem;
+    font-family: 'Poppins';
+    font-size: large;
+    font-weight: 800;
+    color: white;
+}
+.display-btn:hover{
+    transform: scale(1.05);
+    /* color: rgb(31, 192, 170); */
+    background-color: rgb(22, 22, 22);
+    box-shadow: 1px 1px 19px rgb(18, 18, 18);
+}
+.display-btn:active{
+    transform: scale(.98);
+    background-color: rgb(22, 22, 22);
+}
+.display-area{
+    /* border: 2px solid lawngreen; */
+    height: 53vh;
+    width: 50vw;
+    margin: 0 auto 0 auto;
+    background-color: rgb(238, 240, 240);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgb(207, 206, 206);
+    padding: 1rem;
+    overflow-y: scroll;
+    scrollbar-width: none ;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-bottom: rem;
+    box-shadow: 1px 1px 10px 1px rgb(180, 178, 178);
+    border-radius: .2rem;
+}
+
+.header-h1{
+    color:rgb(55, 182, 142);
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.upload-container{
+    /* border: 1px solid salmon; */
+}
+.upload-form{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    gap: .5rem;
+    align-items: center;
+}
+.upload-input{
+    border: 1px solid blue;
+    background-color: rgb(33, 177, 177);
+    border: none;
+    border-radius: .4rem;
+    opacity: 0;
+    position: absolute; 
+    z-index: 2;
+    bottom: 18%;
+    left: 29%;
+    width: 2rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.upload-btn{
+    background-color:transparent;
+    /* box-shadow: 1px 1px 10px rgb(137, 136, 136); */
+    border: none;
+    padding: .2rem 1rem;
+    border-radius: .4rem;
+    font-family: 'Poppins';
+    font-size:1.7rem;
+    font-weight:bolder;
+    color: rgb(66, 65, 65);
+    width: 5%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 17%;
+    left: 27%;
+    z-index: 2
+}
+.query{
+ background-color: rgb(232, 233, 233);
+ display: flex;
+ justify-content: end;
+ height: 2rem;
+ min-height: 2rem;
+ text-align: left;
+ width: 95%;
+ overflow-wrap: anywhere;
+ border-radius: .4rem;
+ padding: .2rem;
+ font-family: 'Poppins';
+ margin: 2rem 10% 2rem 0;
+}
+.response{
+    background-color: rgb(229, 224, 227);
+    display: flex;
+    justify-content: start;
+    width: 90%;
+    overflow-wrap:anywhere;
+    border-radius: .4rem;
+    padding: .2rem;
+    font-family: 'Poppins';
+}
